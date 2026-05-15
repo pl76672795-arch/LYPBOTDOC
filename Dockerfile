@@ -6,12 +6,16 @@ ENV PYTHONUNBUFFERED=1
 
 # Instalamos las librerías gráficas de Linux necesarias para WeasyPrint (PDFs Premium)
 RUN apt-get update && apt-get install -y \
+    python3-dev \
     libpango-1.0-0 \
-    libpangocairo-1.0-0 \
     libpangoft2-1.0-0 \
-    libharfbuzz0b \
+    libjpeg-dev \
+    libopenjp2-7-dev \
     libffi-dev \
     shared-mime-info \
+    libgobject-2.0-0 \
+    libcairo2 \
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
