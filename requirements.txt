@@ -1,0 +1,11 @@
+# Dependencias oficiales de LYP DOC BOT
+python-telegram-bot>=20.0
+httpx
+google-genai
+supabase
+pydantic
+python-docx
+docxtpl
+fpdf2
+python-dotenv
+weasyprint

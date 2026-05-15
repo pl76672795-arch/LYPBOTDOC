@@ -1,0 +1,19 @@
+# Archivos de entorno (Contienen secretos, nunca deben subirse)
+.env
+*.env
+
+# Archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Carpetas de entornos virtuales
+.venv
+venv/
+env/
+
+# Archivos temporales y generados por el bot
+/data/temp/
+*.docx
+*.pdf
